@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Yeon+Sung&display=swap" rel="stylesheet">
+  <title>Momentum</title>
+</head>
+
+<body>
+  <!-- login section -->
+  <section id="login-container">
+    <form id="login-form" class="hidden">
+      <input required maxlength="15" type="text" placeholder="What is your name?" />
+      <!-- <input type="submit" value="Log In" /> -->
+    </form>
+  </section>
+
+  <!-- main -->
+  <main class="main-container">
+    <!-- header -->
+    <header>
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+      <div class="current">
+        <h3 id="day">0000.00.00</h3>
+        <h1 id="clock">00:00:00</h1>
+      </div>
+      <nav>
+        <div class="icon1"><a class="github" target="_blank" href="https://github.com/ji-hyeee"></a></div>
+        <div class="icon2"><a class="notion" target="_blank"
+            href="https://www.notion.so/FE-4d4d6e82d8114bd6b0743c4272194c53"></a></div>
+      </nav>
+    </header>
+    <!-- main section -->
+    <h1 id="greeting" class="hidden"></h1>
+    <section class="main-section">
+      <form action="" id="todo-form">
+        <input type="text" placeholder="today's todo" required />
+      </form>
+      <ul id="todo-list"></ul>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div id="quote">
+        <span></span>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/greeting.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/weather.js"></script>
+</body>
+
+</html>
